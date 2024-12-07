@@ -1,0 +1,1 @@
+The only difference between the chrome version and the firefox one is the manifest (v2 vs v3)
