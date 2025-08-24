@@ -6,10 +6,13 @@
   "permissions": ["activeTab", "storage", "https://www.amazon.es/"],
   "content_scripts": [
     {
-      "matches": ["*://*.amazon.com/hz/wishlist/ls/*", "*://*.amazon.es/hz/wishlist/ls/*"],
+      "matches": [
+        "*://*.amazon.com/*hz/wishlist/ls/*",
+        "*://*.amazon.es/*hz/wishlist/ls/*"
+      ],
       "js": ["content.js"]
     }
-  ],  
+  ],
   "background": {
     "service_worker": "background.js"
   },

@@ -19,7 +19,10 @@
   ],
   "content_scripts": [
     {
-      "matches": ["*://*.amazon.com/hz/wishlist/ls/*", "*://*.amazon.es/hz/wishlist/ls/*"],
+      "matches": [
+        "*://*.amazon.com/*hz/wishlist/ls/*",
+        "*://*.amazon.es/*hz/wishlist/ls/*"
+      ],
       "js": ["content.js"]
     }
   ],
