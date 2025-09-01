@@ -7,4 +7,20 @@ language variants.
 Building
 --------
 
-Run `npm run build` to create `dist/chrome.zip` and `dist/firefox.zip`.
+This extension uses a cross-platform build system that works on Windows, Mac, and Linux.
+
+**Prerequisites:**
+- Node.js (v14 or higher)
+- npm
+
+**Setup:**
+1. Install dependencies: `npm install`
+2. Run the build: `npm run build`
+
+The build process will create `dist/chrome.zip` and `dist/firefox.zip` files that can be
+installed in their respective browsers.
+
+**Build Details:**
+- Automatically handles manifest differences between Chrome (v3) and Firefox (v2)
+- Creates optimized zip files without external dependencies
+- Works consistently across all operating systems
